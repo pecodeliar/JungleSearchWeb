@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Google Images</title>
+</head>
+<body>
+    <header class="header">
+            <div class="header-container">
+                <div class="image-header">
+                    <div class="h-r-content" id="right-links">
+                        <nav class="header-nav">
+                            <a href="index.html">Google Search</a>
+                        </nav>
+                    </div>
+                    <div class="h-r-content header-menu">
+                        <a href="#" id="grid-btn"><i class='bx bxs-grid grid' aria-label="Menu Button"></i></a>
+                    </div>
+                    <div class="h-r-content header-extras">
+                        <button type="button" class="pfp" id="pfp">
+                            <img src="https://64.media.tumblr.com/4c216031580e5282d895741e157dbd29/98c6b7c7e62f4178-54/s250x400/9eacc6962148b541e56fcbfc7f435be45cc1de01.jpg" alt="Profile Picture Menu" id="pfp">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="main-container">
+            <section class="image-section">
+                <div class="image-container">
+                    <span class="images-text">Images</span>
+                    <img src="https://mofc.unic.ac.cy/wp-content/uploads/2020/03/google-logo-white-png-4-e1583227413643.png" alt="Google Logo" id="search-logo">
+                </div>
+                <div class="search-bar">
+                    <form method="get" action="http://images.google.com/images" id="submit_this">
+                    <i class='bx bx-search-alt-2 search-icon'></i>
+                    <input type="text" name="q" class="search-input">
+                    <div class="icon-buttons">
+                        <a href="#"><i class='bx bxs-camera image-icon camera' aria-label="Search by Image Button that cannot be used"></i></a>
+                        <a href="#" onclick="myFunction()" id="image-bttn"><i class='bx bx-search-alt-2 image-icon glass' aria-label="Submit Button"></i></i></a>
+                    </div>
+                    <!--https://www.geeksforgeeks.org/how-to-use-anchor-tag-as-submit-button/-->
+                    <script>
+                        function myFunction() {
+                            document.getElementById("submit_this").submit();
+                        }
+                    </script>
+                    </form>
+                    <div class="helpful-container">
+                        <a href="https://blog.google/products/news/fact-checking-misinformation-google-features/?utm_source=hpp&utm_medium=referral" class="image-helpful">
+                            Helpful tips to fact check information online</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <nav class="footer-nav">
+                        <a href="#">About</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Business</a>
+                        <a href="#">How Search Works</a>
+                    </nav>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Settings</a>
+                    </nav>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

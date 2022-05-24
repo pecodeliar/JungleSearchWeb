@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Google Advanced Search</title>
+</head>
+<body>
+    <header class="advheader">
+            <div class="hdrcontainer">
+                <div class="idkheader">
+                    <div class="h-r-content" id="right-links">
+                        <nav class="header-nav">
+                            <a href="index.html">Google Search</a>
+                        </nav>
+                    </div>
+                    <div class="h-r-content header-menu">
+                        <a href="#" id="grid-btn"><i class='bx bxs-grid grid' aria-label="Menu Button"></i></a>
+                    </div>
+                    <div class="h-r-content header-extras">
+                        <button type="button" class="pfp" id="pfp">
+                            <img src="https://64.media.tumblr.com/4c216031580e5282d895741e157dbd29/98c6b7c7e62f4178-54/s250x400/9eacc6962148b541e56fcbfc7f435be45cc1de01.jpg" alt="Profile Picture" id="pfp">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="adv-main">
+            <h1 class="adv-title">Advanced Search</h1>
+            <form action="https://www.google.com/search">
+                <section class="adv-inputs">
+                    <div class="find-container inpcont">
+                        <h2>Find pages with...</h2>
+                        <div class="find-inputs advcont">
+                            <div class="test">
+                                <label for="find-all">all these words:</label>
+                                <input type="text" name="as_q" id="find-all">
+                                <p>Type the important words:   <span>tricolor rat terrier</span></p>
+                            </div>
+                            <div class="test">
+                                <label for="find-this">this exact word or phrase:</label>
+                                <input type="text" name="as_epq" id="find-this">
+                                <p>Put exact words in quotes:  <span>"rat terrier"</span></p>
+                            </div>
+                            <div class="test">
+                                <label for="find-any">any of these words:</label>
+                                <input type="text" name="as_oq" id="find-any">
+                                <p>Type <span>OR</span> between all the words you want:  <span>miniature OR standard</span></p>
+                            </div>
+                            <div class="test">
+                                <label for="find-none">none of these words:</label>
+                                <input type="text" name="as_eq" id="find-none">
+                                <p>Put a minus sign just before words you don't want: <span>-rodent, -"Jack Russell"</span></p>
+                            </div>
+                            <div class="test">
+                                <label for="find-num-l">numbers ranging from:</label>
+                                <input type="text" name="as_nlo" id="find-num-l">
+                                <label for="find-num-r" id="to-label">to</label>
+                                <input type="text" name="as_nhi" id="find-num-r">
+                                <p>Put 2 periods between the numbers and add a unit of measure: 
+                                    <span>10..35 lb, $300..$500, 2010..2011</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="narrow-container inpcont">
+                        <h2>Then narrow your results by...</h2>
+                        <div class="narrow-selects advcont">
+                            <div class="test">
+                                <label for="narrow-lang">language:</label>
+                                <select name="language" id="narrow-lang">
+                                    <option value="any-lang">any language</option>
+                                    <option value="atlantean">Atlantean</option>
+                                    <option value="klingon">Klingon</option>
+                                    <option value="goauld">Goa'uld</option>
+                                    <option value="navi">Na'vi</option>
+                                    <option value="poneglyph ">Poneglyph</option>
+                                    <option value="vulcan">Vulcan</option>
+                                </select>
+                                <p>Find pages in the language you select.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-reg">region:</label>
+                                <select name="region" id="narrow-reg">
+                                    <option value="any-reg">any region</option>
+                                    <option value="bahavia">Bahavia</option>
+                                    <option value="bialya ">Bialya</option>
+                                    <option value="bowser">Bowser's Kingdom</option>
+                                    <option value="cascadia">Cascadia</option>
+                                    <option value="china-fed">Chinese Federation</option>
+                                    <option value="cobra">Cobra Island</option>
+                                    <option value="corto">Corto Maltese</option>
+                                    <option value="diamantara">Republica de Diamantara</option>
+                                    <option value="drusselstein">Drusselstein</option>
+                                    <option value="druznia">Druznia</option>
+                                    <option value="eldia">Eldia</option>
+                                    <option value="enclave">Enclave</option>
+                                    <option value="druznia">Druznia</option>
+                                    <option value="freedonia">Freedonia</option>
+                                    <option value="genosha">Genosha</option>
+                                    <option value="genovia">Genovia</option>
+                                    <option value="rep-gb">Republic of Great Britain</option>
+                                    <option value="holy-emp">Holy Britannian Empire</option>
+                                    <option value="ishkabar ">Ishkabar</option>
+                                    <option value="kahndaq">Kahndaq</option>
+                                    <option value="kamistan">Islamic Republic of Kamistan</option>
+                                    <option value="kasnia">Kasnia</option>
+                                    <option value="Kaukistan">Kaukistan</option>
+                                    <option value="kenyopia">Kenyopia</option>
+                                    <option value="latveria">Latveria</option>
+                                    <option value="loompa">Loompa Land</option>
+                                    <option value="lugash">Lugash</option>
+                                    <option value="lyrobia">Lyrobia</option>
+                                    <option value="madripoor">Madripoor</option>
+                                    <option value="malicuria">Malicuria</option>
+                                    <option value="markovia">Markovia</option>
+                                    <option value="marley">Marley</option>
+                                    <option value="moldovakia">Moldovakia</option>
+                                    <option value="new-cali">New California Republic</option>
+                                    <option value="new-ger">New Germany</option>
+                                    <option value="rearendia">New Rearendia</option>
+                                    <option value="ninjago">Ninjago</option>
+                                    <option value="novoselic">The Kingdom of Novoselic</option>
+                                    <option value="omnistat">OmniStat</option>
+                                    <option value="oz">Land of Oz</option>
+                                    <option value="panem">Panem</option>
+                                    <option value="poko">Pokolistan</option>
+                                    <option value="qurac">Qurac</option>
+                                    <option value="rapture">Rapturea</option>
+                                    <option value="rhelasia">Rhelasia</option>
+                                    <option value="sabaeus">Sabaeus</option>
+                                    <option value="lorenzo">San Lorenzo</option>
+                                    <option value="prisca">Santa Prisca</option>
+                                    <option value="marco">Santo Marco</option>
+                                    <option value="gordo">Sierra Gordo</option>
+                                    <option value="sokovia">Sokovia</option>
+                                    <option value="sontar">Sontar</option>
+                                    <option value="ussa">United States of South Africa</option>
+                                    <option value="themy">Themysciraa</option>
+                                    <option value="carpathia ">Trans-Carpathia</option>
+                                    <option value="transia">Transia</option>
+                                    <option value="vadeem">Vadeem</option>
+                                    <option value="vlatava">Vlatava</option>
+                                    <option value="wakanda">Wakanda</option>
+                                    <option value="yerba">Yerba</option>
+                                    <option value="Yudonia">Yudonia</option>
+                                </select>
+                                <p>Find pages published in a particular region.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-update">last update:</label>
+                                <select name="update" id="narrow-update">
+                                    <option value="anytime">anytime</option>
+                                    <option value="full-day">past 24 hours</option>
+                                    <option value="week">past week</option>
+                                    <option value="month">past month</option>
+                                    <option value="year">past year</option>
+                                </select>
+                                <p>Find pages updated within the time you specify.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-site">site or domain:</label>
+                                <input type="text" name="q" id="narrow-site">
+                                <p>Search one site (like  <span>wikipedia.org</span> ) or limit your results to a domain like 
+                                    <span>.edu</span>, <span>.org</span> or <span>.org</span></p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-terms">terms appearing:</label>
+                                <select name="terms" id="narrow-terms">
+                                    <option value="anytime">anywhere in the page</option>
+                                    <option value="in-title">in the title of the page</option>
+                                    <option value="in-text">in the text of the page</option>
+                                    <option value="in-url">in the URL of the page</option>
+                                    <option value="in-links">in links to the page</option>
+                                </select>
+                                <p>Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-safe" id="safe-label">SafeSearch:</label>
+                                <select name="safe-search" id="narrow-safe">
+                                    <option value="show-exp">Show explicit restults</option>
+                                    <option value="hide-exp">Hide explicit restults</option>
+                                </select>
+                                <p>Tell <a href="#" id="safe-link">SafeSearch</a> whether to filter sexually explicit content.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-file">file type:</label>
+                                <select name="file-type" id="narrow-file">
+                                    <option value="any-form">any format</option>
+                                    <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                                    <option value="post">Adobe Postscript (.ps)</option>
+                                    <option value="dwf">Autodesk DWF (.dwf)</option>
+                                    <option value="kml">Google Earth KML (.kml)</option>
+                                    <option value="kmz">Google Earth KMZ (.kmz)</option>
+                                    <option value="xls">Microsoft Excel (.xls)</option>
+                                    <option value="ppt">Microsoft Powerpoint (.ppt)</option>
+                                    <option value="doc">Microsoft Word (.doc)</option>
+                                    <option value="rtf">Rich Text Format (.rtf)</option>
+                                    <option value="swf">Shockwave Flash (.swf)</option>
+                                </select>
+                                <p>Find pages in the format you prefer.</p>
+                            </div>
+                            <div class="test">
+                                <label for="narrow-usage" id="usage-label">usage rights:</label>
+                                <select name="usage-rights" id="narrow-usage">
+                                    <option value="no-filt">not filtered by license</option>
+                                    <option value="free">free to use or share</option>
+                                    <option value="free-c">free to use or share, even commercially</option>
+                                    <option value="free-m">free to use share or modify</option>
+                                    <option value="free-all">free to use share or modify, even commercially</option>
+                                </select>
+                                <p>Find pages you are free to use yourself.</p>
+                            </div>
+                            <input type="submit" value="Advanced Search" class="adv-bttn">
+                        </div>
+                    </div>
+                    <div class="also-container">
+                        <h2 id="also-st">You can also...</h2>
+                        <div class="also-links">
+                            <a href="#">Find pages that are similar to a URL</a>
+                            <a href="#">Search pages you've visited</a>
+                            <a href="#">Use operators in the search box</a>
+                            <a href="#">Customize your search settings</a>
+                        </div>
+                    </div>
+                </section>
+            </form>
+    </main>
+    <div class="adv-footer">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="#">Help</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </nav>
+            </div>
+    </div>
+</body>
+</html>
