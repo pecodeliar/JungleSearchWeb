@@ -32,7 +32,7 @@
                 </div>
                 <div class="h-r-content header-extras">
                         <button type="button" class="pfp" id="pfp">
-                            <img src="https://64.media.tumblr.com/4c216031580e5282d895741e157dbd29/98c6b7c7e62f4178-54/s250x400/9eacc6962148b541e56fcbfc7f435be45cc1de01.jpg" alt="Profile Picture" id="pfp">
+                            <img src="https://i.imgur.com/uWVm183.jpg" alt="Profile Picture" id="pfp">
                         </button>
                 </div>
             </div>
@@ -41,17 +41,34 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <div class="modal-header">
-            <div class="title">Example Modal</div>
             <span class="close">&times;</span>
-          </div>
-        <div class="modal-content">
-            <p>Some text in the Modal..</p>
+        </div>
+            <div class="profile-popup">
+                <img src="https://i.imgur.com/uWVm183.jpg" alt="Profile Picture" id="modal-pfp">
+                <p id="profile-name" class="modal-content">Mari McCabe</p>
+                <p id="email" class="modal-content">mccabe.mari@jmail.com</p>
+                <button type="button" id="manage-bttn" class="modal-content">Manage your Jungle Account</button>
+                <hr>
+                <div class="modal-accounts">
+                    <button type="button" id="account-bttn">
+                        <i class='bx bx-user-plus' id="add-acc"></i>
+                        <p id="add-text">Add another account</p>
+                    </button>
+                </div>
+                <hr>
+                <button type="button" id="signout-bttn" class="modal-content">Sign out</button>
+                <hr>
+                <div class="modal-footer">
+                    <button type="button" class="mdl-bttm-btn">Privacy Policy</button>
+                    <button type="button" class="mdl-bttm-btn">Terms of Service</button>
+                </div>
+            </div>
         </div>
     </div>
-    <main class="main-container"> 
+    <main class="main-container">  
         <section class="search-section">
             <div class="search-container">
-                <img src="https://mofc.unic.ac.cy/wp-content/uploads/2020/03/google-logo-white-png-4-e1583227413643.png" alt="Google Logo" id="search-logo">
+                <img src="https://i.imgur.com/7z2P7YU.png" alt="Jungle Logo" id="search-logo">
             </div>
             <form action="https://www.google.com/search">
                 <div class="search-bar">
@@ -59,7 +76,7 @@
                     <input type="text" name="q" class="search-input">
                 </div>
                 <div class="search-buttons">
-                    <input type="submit" value="Google Search" class="submit-button" name="btnG">
+                    <input type="submit" value="Jungle Search" class="submit-button" name="btnG">
                     <button type="submit" value="I'm Feeling Lucky" class="submit-button"  name="btnI">I'm Feeling Lucky</button>
                 </div>
             </form>
