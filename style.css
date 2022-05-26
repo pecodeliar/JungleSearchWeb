@@ -230,6 +230,10 @@ body {
     cursor: pointer;
 }
 
+.close:focus-visible{
+    outline: white solid 3px;
+}
+
 #manage-bttn {
     background: var(--search-button);
     color: white;
@@ -274,6 +278,10 @@ body {
 
 #account-bttn:hover {
     background: var(--outline);
+}
+
+#account-bttn:focus-visible{
+    outline: white solid 3px;
 }
 
 #add-acc {
@@ -325,6 +333,10 @@ body {
 
 .modal button:hover {
     background: var(--outline);
+}
+
+.modal button:focus-visible{
+    outline: white solid 3px;
 }
 
 /* ======= Main (Images) =======*/
