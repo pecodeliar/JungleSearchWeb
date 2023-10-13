@@ -812,6 +812,10 @@ h2 {
 
 @media screen and (max-width: 770px) {
 
+    .modal {
+        max-width: 100%;
+    }
+
     .header-right {
         text-align: end;
         width: 100%;
