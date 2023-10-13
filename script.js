@@ -1,3 +1,32 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+  const dummyLinks = document.querySelectorAll("a:not(.working)");
+
+  for (const link of dummyLinks) {
+    link.addEventListener("click", () => {
+      fetch(`https://icanhazdadjoke.com/`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+        },
+      })
+      .then(response => {
+          if (response.ok) return response.json();
+          return response.json().then(response => {throw new Error(response.error)})
+      })
+      .then(result => {
+          //console.log(result)
+          alert(`You clicked a dummy link, so here's a dad joke:\n\n${result.joke}`);
+      })
+      .catch(error => {
+          console.log(error);
+      });
+
+    })
+  }
+
+});
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -22,4 +51,4 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-} 
+}
