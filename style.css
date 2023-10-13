@@ -500,6 +500,12 @@ body, html {
     outline: white solid 3px;
 }
 
+#disclaimer {
+    color: var(--adv-lgt-blue);
+    font-size: .80rem;
+    text-decoration: none;
+}
+
 /* ======= Main (Advanced) =======*/
 
 .adv-main {
