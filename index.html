@@ -12,37 +12,38 @@
     <title>Jungle</title>
 </head>
 <body class="search-page">
-    <header class="header">
-        <div class="header-container">
-            <div class="header-left">
-                <nav class="header-nav">
-                    <a href="#">About</a>
-                    <a href="#">Store</a>
-                </nav>
-            </div>
-            <div class="header-right">
-                <div class="h-r-content" id="right-links">
+    <div class="page-container">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-left">
                     <nav class="header-nav">
-                        <a href="advanced.html">Advanced Search</a>
-                        <a href="images.html">Image Search</a>
+                        <a href="#">About</a>
+                        <a href="#">Store</a>
                     </nav>
                 </div>
-                <div class="h-r-content header-menu">
-                    <a href="#" id="grid-btn"><i class='bx bxs-grid grid' aria-label="Menu Button"></i></a>
-                </div>
-                <div class="h-r-content header-extras">
-                        <button type="button" class="pfp" id="pfp">
-                            <img src="https://i.imgur.com/uWVm183.jpg" alt="Profile Picture" id="pfp">
-                        </button>
+                <div class="header-right">
+                    <div class="h-r-content" id="right-links">
+                        <nav class="header-nav">
+                            <a href="advanced.html">Advanced</a>
+                            <a href="images.html">Images</a>
+                        </nav>
+                    </div>
+                    <div class="h-r-content header-menu">
+                        <a href="#" id="grid-btn"><i class='bx bxs-grid grid' aria-label="Menu Button"></i></a>
+                    </div>
+                    <div class="h-r-content header-extras">
+                            <button type="button" class="pfp" id="pfp">
+                                <img src="https://i.imgur.com/uWVm183.jpg" alt="Profile Picture" id="pfp">
+                            </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-        </div>
+        </header>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
             <div class="profile-popup">
                 <img src="https://i.imgur.com/uWVm183.jpg" alt="Profile Picture" id="modal-pfp">
                 <p id="profile-name" class="modal-content">Mari McCabe</p>
@@ -64,48 +65,48 @@
                 </div>
             </div>
         </div>
+        <main class="main-container">
+            <section class="search-section">
+                <div class="search-container">
+                    <img src="https://i.imgur.com/7z2P7YU.png" alt="Jungle Logo" id="search-logo">
+                </div>
+                <form action="https://www.google.com/search">
+                    <div class="search-bar">
+                        <i class='bx bx-search-alt-2 search-icon'></i>
+                        <input type="text" name="q" class="search-input">
+                    </div>
+                    <div class="search-buttons">
+                        <input type="submit" value="Jungle Search" class="submit-button" name="btnG">
+                        <button type="submit" value="I'm Feeling Lucky" class="submit-button"  name="btnI">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <nav class="footer-nav">
+                        <a href="#">Advertising</a>
+                        <a href="#">Business</a>
+                        <a href="#">How Search Works</a>
+                    </nav>
+                </div>
+                <div class="footer-center">
+                    <nav class="footer-nav">
+                        <a href="#">
+                            <i class='bx bxs-leaf leaf'></i>
+                            Carbon neutral since 2007</a>
+                    </nav>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Settings</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
     </div>
-    <main class="main-container">  
-        <section class="search-section">
-            <div class="search-container">
-                <img src="https://i.imgur.com/7z2P7YU.png" alt="Jungle Logo" id="search-logo">
-            </div>
-            <form action="https://www.google.com/search">
-                <div class="search-bar">
-                    <i class='bx bx-search-alt-2 search-icon'></i>
-                    <input type="text" name="q" class="search-input">
-                </div>
-                <div class="search-buttons">
-                    <input type="submit" value="Jungle Search" class="submit-button" name="btnG">
-                    <button type="submit" value="I'm Feeling Lucky" class="submit-button"  name="btnI">I'm Feeling Lucky</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <nav class="footer-nav">
-                    <a href="#">Advertising</a>
-                    <a href="#">Business</a>
-                    <a href="#">How Search Works</a>
-                </nav>
-            </div>
-            <div class="footer-center">
-                <nav class="footer-nav">
-                    <a href="#">
-                        <i class='bx bxs-leaf leaf'></i>
-                        Carbon neutral since 2007</a>
-                </nav>
-            </div>
-            <div class="footer-right">
-                <nav class="footer-nav">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Settings</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
