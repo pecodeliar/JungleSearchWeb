@@ -922,7 +922,6 @@ h2 {
 @media screen and (max-width: 522px) {
     #find-num-l,
     #find-num-r {
-       width: 30px;
        transition: var(--tran-04);
    }
 }
@@ -935,6 +934,19 @@ h2 {
         background: blue;
     }
 
+    .adv-main h1 {
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .adv-modal {
+        max-width: 90%;
+    }
+
+    .find-inputs {
+        background-color: pink;
+    }
+
     .search-input {
         width: 275px;
         transition: var(--tran-04);
@@ -943,6 +955,24 @@ h2 {
     #disclaimer {
         font-size: .60rem;
         text-align: center;
+      }
+
+      .inpcont {
+        margin-left: 24px;
+      }
+
+      .test select {
+        width: 400px;
+        transition: var(--tran-04);
+      }
+
+      .narrow-container .inpcont {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      #num-left {
+        display: block;
       }
 
 }
@@ -962,6 +992,11 @@ h2 {
        transition: var(--tran-04);
    }
 
+   .test select {
+    width: 290px;
+    transition: var(--tran-04);
+  }
+
    .header-left {
     display: none;
   }
@@ -970,24 +1005,12 @@ h2 {
        margin-left: 285px;
    }
 
-   .test input,
-   .test select{
-       width: auto;
-       transition: var(--tran-04);
-   }
-
-   .test select {
-       width: 152px;
-       transition: var(--tran-04);
-   }
-
    #find-num-l,
    #find-num-r {
-       width: 48px;
    }
 
    .adv-bttn {
-       margin: 15px 0 15px 215px;
+       /*margin: 15px 0 15px 215px;*/
        transition: var(--tran-04);
    }
 }
